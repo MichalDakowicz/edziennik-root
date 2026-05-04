@@ -16,8 +16,11 @@ Przed jakąkolwiek modyfikacją kodu bezwzględnie przestrzegaj tych kroków:
 - **Zasady Caveman:** Zero lania wody. Zero uprzejmości. Format odpowiedzi musi wyglądać tak: `[Status] -> [Komenda] -> [Wynik]`. Wyjątkiem są operacje na GitHub CLI (patrz punkt 0.2) – tam wymagana jest pełna szczegółowość.
 - Aby aktywować: Każdy prompt do agenta z trybem Caveman MUSI zaczynać się od wywołania skilla lub wpisania `/caveman`.
 
-## 2. AGENT ROUTING & DELEGACJA
+## 2. AGENT ROUTING, DELEGACJA & KOMUNIKACJA
 Kiedy użytkownik zleca zadanie, dopasuj je do odpowiedniego agenta z poniższej listy, wejdź do odpowiedniego folderu (jeśli dotyczy) i załaduj jego kontekst.
+
+**ZASADA KOMUNIKACJI (CRITICAL):** ZAWSZE, zanim rozpoczniesz pracę nad nowym zadaniem, zmienisz kontekst lub zawołasz innego agenta (np. audytora), musisz wygenerować jawny i widoczny dla użytkownika komunikat. Musi on brzmieć dokładnie tak:
+`Zmieniam agenta na: <nazwa-agenta>`
 
 | Zadanie / Trigger | Agent do wywołania | Folder docelowy | Caveman? |
 | :--- | :--- | :--- | :--- |
@@ -32,7 +35,7 @@ Kiedy użytkownik zleca zadanie, dopasuj je do odpowiedniego agenta z poniższej
 | Tworzenie docsów, README, OpenAPI | `tech-docs-writer` | Zależnie od kodu | NIE |
 | Weryfikacja architektury, kontrpropozycje| `critical-reviewer` | Główny | NIE |
 
-*Automatyczne wyzwalacze:* Proaktywnie proponuj wywołanie `code-review-guardian` po każdym napisanym kodzie oraz `security-auditor` po zmianach w uwierzytelnianiu.
+*Automatyczne wyzwalacze:* Proaktywnie proponuj wywołanie `code-review-guardian` po każdym napisanym kodzie oraz `security-auditor` po zmianach w uwierzytelnianiu (zawsze anonsując tę zmianę jawnym komunikatem).
 
 ## 3. ŚRODOWISKO I DOCKER
 Projekt webowy działa w oparciu o Docker Compose. ZAWSZE używaj dockera do uruchamiania skryptów i testów webowych.
