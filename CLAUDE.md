@@ -7,7 +7,7 @@ Jako główny proces Claude, Twoim pierwszym zadaniem jest zrozumienie żądania
 Przed jakąkolwiek modyfikacją kodu bezwzględnie przestrzegaj tych kroków:
 1. **Zarządzanie przez GitHub CLI (`gh`):** Używaj narzędzia `gh` do sprawdzania, tworzenia i aktualizacji zadań. Zawsze sprawdzaj otwarte zadania (`gh issue list`) lub czytaj detale konkretnego problemu (`gh issue view`).
 2. **Szczegółowość w Issues i PR:** Mimo obowiązującego trybu Caveman podczas pisania kodu, treść nowo tworzonych GitHub Issues, komentarzy (`gh issue comment`) oraz Pull Requestów MUSI być niezwykle wyczerpująca. Rozpisuj szczegółowo plan architektoniczny, przypadki brzegowe, checklisty (To-Do) oraz decyzje projektowe.
-3. **Nowy branch:** ZAWSZE stwórz nowy branch oparty o numer zadania: `git checkout -b feat/123-nazwa-taska` (lub `fix/`, `docs/`, `refactor/`). Nigdy nie pracuj na main/master.
+3. **Nowy branch:** ZAWSZE stwórz nowy branch na docelowym repo (np zmiany frontend -> branch na repo frontendu) oparty o numer zadania: `git checkout -b feat/123-nazwa-taska` (lub `fix/`, `docs/`, `refactor/`). Nigdy nie pracuj na main/master.
 4. **Zakaz samowolki na produkcji:** Zmiany schematu bazy danych (nowe modele, usuwanie kolumn), zmiany JWT/RBAC, breaking changes w API, nowe zależności npm/pip i pushowanie do zdalnego repozytorium **WYMAGAJĄ ZGODY UŻYTKOWNIKA**.
 5. **Commit, Push & PR:** Po weryfikacji zadania, zapytaj o treść commita, pozwolenie na Push i o to, czy utworzyć Pull Request (`gh pr create`).
 
