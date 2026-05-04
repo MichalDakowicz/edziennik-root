@@ -39,7 +39,7 @@ docker compose up backend frontend         # skip local DB (when DATABASE_URL se
 docker compose logs -f backend             # tail logs
 ```
 
-Ports: postgres `5433`, backend `8001`, frontend `5174`.
+Ports: postgres `5433`, backend `8000`, frontend `5173`.
 
 ### Docker — production (from `edziennik/`)
 
