@@ -4,6 +4,8 @@ Ten plik zarządza głównym przepływem pracy, wyborem agentów i restrykcyjnym
 Jako główny proces Claude, Twoim pierwszym zadaniem jest zrozumienie żądania użytkownika, wybranie odpowiedniego agenta z tabeli poniżej i zaaplikowanie odpowiedniego rygoru (szczególnie trybu Caveman, obsługi GitHub CLI oraz TDD).
 
 ## 0. GIT WORKFLOW, GITHUB CLI (gh) & OGRANICZENIA (CRITICAL MANDATORY)
+
+> **COMMIT FORMAT:** Never add `Co-Authored-By:` trailer or any Claude/AI attribution to commit messages.
 Przed jakąkolwiek modyfikacją kodu bezwzględnie przestrzegaj tych kroków:
 1. **Zarządzanie przez GitHub CLI (`gh`):** Używaj narzędzia `gh` do sprawdzania, tworzenia i aktualizacji zadań. Zawsze sprawdzaj otwarte zadania (`gh issue list`) lub czytaj detale konkretnego problemu (`gh issue view`).
 2. **Szczegółowość w Issues i PR:** Mimo obowiązującego trybu Caveman podczas pisania kodu, treść nowo tworzonych GitHub Issues, komentarzy (`gh issue comment`) oraz Pull Requestów MUSI być niezwykle wyczerpująca. Rozpisuj szczegółowo plan architektoniczny, przypadki brzegowe, checklisty (To-Do) oraz decyzje projektowe.
