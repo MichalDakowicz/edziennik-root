@@ -2,3 +2,5 @@
 venv
 .mcp.json
 .claude/settings.local.json
+openspec
+.github
