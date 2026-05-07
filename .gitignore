@@ -4,3 +4,8 @@ venv
 .claude/settings.local.json
 openspec
 .github
+.agents/
+.codex/
+.vscode/
+.claude/commands/
+.claude/skills/openspec-*
