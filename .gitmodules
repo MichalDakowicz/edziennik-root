@@ -1,9 +1,0 @@
-[submodule "edziennik"]
-	path = edziennik
-	url = https://github.com/MichalDakowicz/edziennik.git
-[submodule "edziennik-frontend"]
-	path = edziennik-frontend
-	url = https://github.com/MichalDakowicz/edziennik-frontend.git
-[submodule "e-dziennik-mobilka"]
-	path = e-dziennik-mobilka
-	url = https://github.com/MichalDakowicz/e-dziennik-mobilka.git
