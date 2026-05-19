@@ -7,6 +7,14 @@ openspec
 .agents/*
 !.agents/skills/
 .agents/skills/*
+!.agents/skills/create-ticket/
+!.agents/skills/create-ticket/**
+!.agents/skills/create-ticket-pm/
+!.agents/skills/create-ticket-pm/**
+!.agents/skills/work/
+!.agents/skills/work/**
+!.agents/skills/work-pm/
+!.agents/skills/work-pm/**
 .codex/
 .vscode/
 .claude/commands/

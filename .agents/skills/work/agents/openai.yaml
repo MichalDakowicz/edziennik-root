@@ -1,0 +1,4 @@
+interface:
+  display_name: "Work"
+  short_description: "Execute a GitHub issue with TDD, critic review, PR flow, and wiki updates"
+  default_prompt: "Use $work to execute a GitHub issue end-to-end with wiki research, strict TDD, critic scoring, Git automation, and issue updates."

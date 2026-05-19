@@ -1,0 +1,4 @@
+interface:
+  display_name: "Work PM"
+  short_description: "Ask 3 PM questions, then execute a GitHub issue with TDD and PR flow"
+  default_prompt: "Use $work-pm to ask exactly 3 PM pre-flight questions, then execute a GitHub issue with wiki research, strict TDD, critic scoring, Git automation, and issue updates."
