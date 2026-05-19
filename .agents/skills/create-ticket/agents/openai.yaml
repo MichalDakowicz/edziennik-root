@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create Ticket"
+  short_description: "Turn a raw feature or bug description into a GitHub-ready ticket"
+  default_prompt: "Use $create-ticket to generate a structured engineering ticket with wiki references, TDD blueprint, critic gate, and story points."
