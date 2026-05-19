@@ -4,7 +4,9 @@ venv
 .claude/settings.local.json
 openspec
 .github
-.agents/
+.agents/*
+!.agents/skills/
+.agents/skills/*
 .codex/
 .vscode/
 .claude/commands/
@@ -14,3 +16,4 @@ edziennik-frontend/
 e-dziennik-mobilka/
 e-dziennik-mobilka-nauczyciel/
 e-dziennik-mobilka-uczen/
+.aider*
