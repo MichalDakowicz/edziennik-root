@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create Ticket PM"
+  short_description: "Ask PM scoping questions, then generate a GitHub-ready ticket"
+  default_prompt: "Use $create-ticket-pm to ask 2-3 scoping questions first, then generate a structured engineering ticket with wiki references, TDD blueprint, critic gate, and story points."
