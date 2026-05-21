@@ -57,7 +57,33 @@ Wykonuj zadania programistyczne DOKŁADNIE w tych krokach (Test-Driven Developme
 7. **DONE:** Zaktualizuj stan zadania w GitHubie. Wygeneruj raport Caveman dla użytkownika, informując o wynikach testów i lintera.
 8. **PUSH & PR:** Po zgodzie użytkownika zrób push i otwórz wyczerpujący Pull Request (`gh pr create`).
 
-## 5. STRUKTURA PROJEKTU
+## 5. DOKUMENTACJA (CRITICAL — MANDATORY)
+
+Po każdej implementacji nowej funkcjonalności, endpointu API, modelu, komponentu lub zmianie w auth/RBAC **MUSISZ** zaktualizować lub dodać odpowiedni plik dokumentacji:
+
+- **Backend (nowy endpoint/model/logika):** `edziennik/docs/api/<MODUŁ>.md`
+- **Frontend (nowy komponent/strona/hook):** `edziennik-frontend/docs/COMPONENTS.md` lub odpowiedni plik w `docs/`
+- **Auth/sesje/RBAC:** `edziennik/docs/api/AUTHENTICATION.md` + `edziennik-frontend/docs/AUTH_FLOW.md`
+- **State management/query keys:** `edziennik-frontend/docs/STATE_MANAGEMENT.md`
+
+Struktura istniejących docs API:
+```
+edziennik/docs/api/
+├── ACADEMIC.md         — rok szkolny, semestry
+├── ANKIETY.md          — ankiety i quizy
+├── ATTENDANCE.md       — frekwencja, usprawiedliwienia
+├── AUTHENTICATION.md   — JWT, sesje, tokeny
+├── DIRECTOR.md         — panel dyrektora
+├── GRADES.md           — oceny, zachowanie
+├── PARENT.md           — panel rodzica
+├── TIMETABLES.md       — plany zajęć
+├── USERS.md            — użytkownicy, klasy, wiadomości
+└── UTILS.md            — przedmioty, prace domowe, pliki
+```
+
+**Zasada:** Nowa funkcja = nowy/zaktualizowany doc. Bez wyjątków.
+
+## 6. STRUKTURA PROJEKTU
 - `edziennik/` — Backend w Django 5.2 + DRF. Aplikacje podzielone domenowo (`users`, `grades`, `attendance`, `timetables`, `authentication`). 
 - `edziennik-frontend/` — Aplikacja webowa React SPA + Vite + Tailwind.
 - `edziennik-mobile/` — Aplikacja mobilna na iOS/Android napisana w React Native. 
